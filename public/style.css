@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Event List */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Event Items */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+    transform: translateY(-5px);
+}
+
+/* Active & Inactive Events */
+.actif {
+    border-left: 8px solid #28a745;
+}
+
+.inactif {
+    border-left: 8px solid #dc3545;
+}
+
+/* Event Titles */
+h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #007bff;
+}
+
+/* Date & Description */
+p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Status Badge */
+.status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.status.active {
+    background: #28a745;
+    color: white;
+}
+
+.status.inactive {
+    background: #dc3545;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    bottom: 0;
+    width: 100%;
+}
